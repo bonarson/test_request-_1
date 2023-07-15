@@ -1,0 +1,33 @@
+Java.sql.Connection est une interface dans le package java.sql qui représente une connexion à une base de données. Elle est utilisée pour établir une communication avec une base de données relationnelle à partir d'une application Java.
+
+La principale utilité de l'interface java.sql.Connection est de permettre l'exécution de requêtes SQL sur une base de données et d'effectuer des opérations telles que l'insertion, la mise à jour, la suppression et la récupération des données. La connexion est établie en utilisant un pilote JDBC spécifique pour la base de données cible.
+
+Voici quelques-unes des principales fonctionnalités fournies par java.sql.Connection :
+
+1. Établir une connexion à une base de données en utilisant des informations d'identification telles que l'URL de la base de données, le nom d'utilisateur et le mot de passe.
+2. Créer et exécuter des requêtes SQL pour interagir avec la base de données.
+3. Gérer les transactions en définissant des points de sauvegarde (commit) ou d'annulation (rollback).
+4. Gérer les métadonnées de la base de données, comme les informations sur les tables, les colonnes et les contraintes.
+5. Contrôler le comportement de la connexion, comme la gestion de la mise en cache des connexions et la gestion des connexions poolées.
+
+En résumé, java.sql.Connection est utilisée pour établir une connexion à une base de données, exécuter des requêtes SQL et gérer les transactions et les métadonnées de la base de données dans une application Java.
+
+
+
+Java.sql.Statement et java.sql.PreparedStatement sont deux interfaces fournies par le package java.sql dans Java pour exécuter des requêtes SQL sur une base de données relationnelle. Voici leurs différences :
+
+java.sql.Statement :
+- java.sql.Statement est une interface qui permet d'exécuter des requêtes SQL statiques.
+- Les requêtes SQL sont généralement construites en concaténant des chaînes de caractères, ce qui peut être vulnérable aux attaques par injection SQL.
+- Les requêtes SQL sont compilées à chaque exécution, ce qui peut entraîner une légère perte de performances si la même requête est exécutée plusieurs fois.
+
+java.sql.PreparedStatement :
+- java.sql.PreparedStatement est une sous-interface de java.sql.Statement qui permet d'exécuter des requêtes SQL paramétrées.
+- Les requêtes SQL paramétrées utilisent des paramètres de substitution (représentés par des marqueurs de position, généralement "?") dans la requête, et les valeurs réelles sont fournies à l'exécution.
+- Les requêtes SQL paramétrées sont pré-compilées lorsqu'elles sont créées, ce qui permet une meilleure performance lors de leur exécution répétée.
+- Les requêtes SQL paramétrées offrent une meilleure sécurité en protégeant contre les attaques par injection SQL, car les valeurs des paramètres sont traitées séparément de la requête SQL elle-même.
+
+En résumé, java.sql.Statement est utilisée pour exécuter des requêtes SQL statiques, tandis que java.sql.PreparedStatement est utilisée pour exécuter des requêtes SQL paramétrées, offrant une meilleure sécurité et des performances potentiellement améliorées lors de l'exécution répétée de requêtes.
+
+
+lien : https://waytolearnx.com/2020/05/connexion-a-une-base-de-donnees-postgresql-avec-jdbc-java.html
