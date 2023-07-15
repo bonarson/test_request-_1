@@ -31,3 +31,11 @@ En résumé, java.sql.Statement est utilisée pour exécuter des requêtes SQL s
 
 
 lien : https://waytolearnx.com/2020/05/connexion-a-une-base-de-donnees-postgresql-avec-jdbc-java.html
+
+
+
+
+
+
+
+qwerty
